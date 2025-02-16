@@ -95,11 +95,11 @@ const Homepage = () => {
 
           {/* Card 3 */}
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
-            <div className="relative w-full md:w-[400px] h-[300px] rounded-2xl overflow-hidden">
+            <div className="relative w-full h-[300px]">
               <Image
-                src="https://images.unsplash.com/photo-1518949396226-d2fe3f22014a"
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
                 alt="Well-being"
-                fill
+                layout="fill"
                 className="object-cover"
                 unoptimized
               />
@@ -107,8 +107,8 @@ const Homepage = () => {
                 Reach Out
               </button>
             </div>
-            <div className="flex-1 p-6 border-2 border-gray-200 rounded-2xl">
-              <p className="text-lg leading-relaxed">
+            <div className="flex-1 p-4 md:p-6 border-2 border-gray-200 rounded-2xl">
+              <p className="text-base md:text-lg leading-relaxed">
                 We are committed to nurturing the holistic well-being of children. Our work encompasses providing essential healthcare, combating malnutrition, and offering vital mental health support to build strong foundations for their future.
               </p>
             </div>
