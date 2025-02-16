@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Hero Section */}
-      <div className="w-full relative h-[400px] bg-gray-900 text-white flex items-center justify-center mb-8">
+      <div className="w-full relative h-[300px] bg-gray-900 text-white flex items-center justify-center mb-8">
         <div className="absolute inset-0 bg-black/50 z-10"></div>
         <Image
           src="https://images.unsplash.com/photo-1577896851231-70ef18881754"
@@ -16,28 +16,28 @@ const Homepage = () => {
           priority
           unoptimized
         />
-        <h1 className="text-5xl font-bold text-center z-20 max-w-3xl px-4">
+        <h1 className="text-3xl font-bold text-center z-20 max-w-2xl px-4">
           Unleashing the potential of humanity through service.
         </h1>
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl gap-0 mb-16">
-        <div className="bg-indigo-600 text-white p-8 text-center flex flex-col items-center">
+      <div className="grid grid-cols-1 gap-4 w-full max-w-6xl mb-16 md:grid-cols-3">
+        <div className="bg-indigo-600 text-white p-6 text-center flex flex-col items-center">
           <div className="mb-4">
-            <span className="text-4xl">🤝</span>
+            <span className="text-3xl">🤝</span>
           </div>
           <span>Developing skills</span>
         </div>
-        <div className="bg-black text-white p-8 text-center flex flex-col items-center">
+        <div className="bg-black text-white p-6 text-center flex flex-col items-center">
           <div className="mb-4">
-            <span className="text-4xl">📚</span>
+            <span className="text-3xl">📚</span>
           </div>
           <span>FUNDING EDUCATION</span>
         </div>
-        <div className="bg-emerald-500 text-white p-8 text-center flex flex-col items-center">
+        <div className="bg-emerald-500 text-white p-6 text-center flex flex-col items-center">
           <div className="mb-4">
-            <span className="text-4xl">❤️</span>
+            <span className="text-3xl">❤️</span>
           </div>
           <span>Providing Freedom</span>
         </div>
@@ -45,15 +45,15 @@ const Homepage = () => {
 
       {/* What We Do Section */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-bold text-center mb-12 bg-black text-white py-2 px-6 rounded-full inline-block">
+        <h2 className="text-2xl font-bold text-center mb-12 bg-black text-white py-2 px-6 rounded-full inline-block">
           What we do!
         </h2>
 
         {/* Mission Cards */}
         <div className="space-y-16">
           {/* Card 1 */}
-          <div className="flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
-            <div className="relative w-full md:w-[400px] h-[300px] rounded-2xl overflow-hidden">
+          <div className="flex flex-col items-center gap-8 max-w-5xl mx-auto md:flex-row">
+            <div className="relative w-full h-[250px] rounded-2xl overflow-hidden md:w-[350px]">
               <Image
                 src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c"
                 alt="Children"
@@ -61,12 +61,12 @@ const Homepage = () => {
                 className="object-cover"
                 unoptimized
               />
-              <button className="absolute bottom-4 left-4 bg-indigo-600 text-white px-6 py-2 rounded-full">
+              <button className="absolute bottom-4 left-4 bg-indigo-600 text-white px-4 py-2 rounded-full">
                 Reach Out
               </button>
             </div>
-            <div className="flex-1 p-6 border-2 border-gray-200 rounded-2xl">
-              <p className="text-lg leading-relaxed">
+            <div className="flex-1 p-4 border-2 border-gray-200 rounded-2xl">
+              <p className="text-base leading-relaxed">
                 We instill biblical values in African children, equipping them with spiritual armor to overcome challenges and become beacons of hope. Through faith-based education and mentorship, we empower the next generation to transform Africa.
               </p>
             </div>
@@ -117,12 +117,12 @@ const Homepage = () => {
       </div>
 
       {/* CTA Button */}
-      <button className="bg-black text-white px-8 py-3 rounded-full text-lg font-semibold mb-16 hover:bg-gray-800 transition-colors">
+      <button className="bg-black text-white px-6 py-2 rounded-full text-base font-semibold mb-16 hover:bg-gray-800 transition-colors">
         Learn More About Us
       </button>
 
       {/* Back to Top Button */}
-      <button className="bg-black text-white p-4 rounded-full mb-8 hover:bg-gray-800 transition-colors">
+      <button className="bg-black text-white p-3 rounded-full mb-8 hover:bg-gray-800 transition-colors">
         <span>↑</span>
       </button>
     </div>

@@ -2,15 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';  // Import for active link detection
+import { useState } from 'react';
 
 const Navbar = () => {
-  const pathname = usePathname();  // Get current path
-
-  // Function to check if link is active
-  const isActive = (path: string) => {
-    return pathname === path ? 'text-emerald-500' : 'text-gray-800';
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="w-full bg-white shadow-sm py-4 px-6">
@@ -18,55 +13,40 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png" // Make sure to add your logo to the public folder
-            alt="Eunath Foundation"
+            src="/logo.png"
+            alt="Esinath Foundation"
             width={80}
             height={60}
             className="object-contain"
           />
         </Link>
 
+        {/* Hamburger Icon */}
+        <button
+          className="md:hidden text-gray-800"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+
         {/* Navigation Links */}
-        <ul className="flex items-center gap-8">
+        <ul className={`flex-col md:flex-row md:flex items-center gap-8 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
           <li>
-            <Link 
-              href="/" 
-              className={`${isActive('/')} hover:text-emerald-500 transition-colors font-medium`}
-            >
-              Home
-            </Link>
+            <Link href="/" className="text-gray-800 hover:text-emerald-500 transition-colors font-medium">Home</Link>
           </li>
           <li>
-            <Link 
-              href="/about" 
-              className={`${isActive('/about')} hover:text-emerald-500 transition-colors font-medium`}
-            >
-              About Us
-            </Link>
+            <Link href="/about" className="text-gray-800 hover:text-emerald-500 transition-colors font-medium">About Us</Link>
           </li>
           <li>
-            <Link 
-              href="/get-help" 
-              className={`${isActive('/get-help')} hover:text-emerald-500 transition-colors font-medium`}
-            >
-              Get Help
-            </Link>
+            <Link href="/get-help" className="text-gray-800 hover:text-emerald-500 transition-colors font-medium">Get Help</Link>
           </li>
           <li>
-            <Link 
-              href="/gallery" 
-              className={`${isActive('/gallery')} hover:text-emerald-500 transition-colors font-medium`}
-            >
-              Gallery
-            </Link>
+            <Link href="/gallery" className="text-gray-800 hover:text-emerald-500 transition-colors font-medium">Gallery</Link>
           </li>
           <li>
-            <Link 
-              href="/contact" 
-              className={`${isActive('/contact')} hover:text-emerald-500 transition-colors font-medium`}
-            >
-              Contact Us
-            </Link>
+            <Link href="/contact" className="text-gray-800 hover:text-emerald-500 transition-colors font-medium">Contact Us</Link>
           </li>
         </ul>
       </div>
