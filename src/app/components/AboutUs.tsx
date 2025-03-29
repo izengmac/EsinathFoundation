@@ -74,14 +74,49 @@ const AboutUs = () => {
       </div>
 
       {/* Team Section */}
+      
       <div>
         <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
+        <div className="flex justify-center gap-16 mb-16">
+
+          {/* Team Member 2 */}
+          <div className="text-center">
+            <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/Nyasha.jpeg"
+                alt="Team Member 2"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Jane Smith</h3>
+            <p className="text-gray-600">Executive Director</p>
+          </div>
+          {/* Team Member 1 */}
+          <div className="text-center">
+            <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/Christine.jpeg"
+                alt="Team Member 1"
+                fill
+                className="object-cover top-8"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">John Doe</h3>
+            <p className="text-gray-600">Founder & CEO</p>
+          </div>
+
+        </div>
+      </div>
+ {/* Team Section */}
+      
+ <div>
         <div className="flex justify-center gap-16 mb-16">
           {/* Team Member 1 */}
           <div className="text-center">
             <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
               <Image
-                src="/team-member-1.jpg"
+                src="/brandimage.png"
                 alt="Team Member 1"
                 fill
                 className="object-cover"
@@ -95,7 +130,7 @@ const AboutUs = () => {
           <div className="text-center">
             <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
               <Image
-                src="/team-member-2.jpg"
+                src="/Nyaradzo.png"
                 alt="Team Member 2"
                 fill
                 className="object-cover"
@@ -106,7 +141,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       {/* Call to Action */}
       <div className="text-center mt-16">
         <h2 className="text-3xl font-bold mb-6">Join Us in Making a Difference</h2>
