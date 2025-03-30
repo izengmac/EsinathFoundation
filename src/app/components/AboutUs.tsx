@@ -83,27 +83,27 @@ const AboutUs = () => {
           <div className="text-center">
             <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
               <Image
-                src="/Nyasha.jpeg"
+                src="/Nyasha.png"
                 alt="Team Member 2"
                 fill
-                className="object-cover"
+                className="object-cover object-[65%_25%] "
               />
             </div>
-            <h3 className="text-xl font-bold mb-2">Jane Smith</h3>
+            <h3 className="text-xl font-bold mb-2">Nyasha Muranda</h3>
             <p className="text-gray-600">Executive Director</p>
           </div>
           {/* Team Member 1 */}
           <div className="text-center">
             <div className="relative w-48 h-48 mb-4 rounded-full overflow-hidden">
               <Image
-                src="/Christine.jpeg"
+                src="/Christine.png"
                 alt="Team Member 1"
                 fill
-                className="object-cover top-8"
+                className="object-cover top-8 object-[35%_75%]"
               />
             </div>
-            <h3 className="text-xl font-bold mb-2">John Doe</h3>
-            <p className="text-gray-600">Founder & CEO</p>
+            <h3 className="text-xl font-bold mb-2">Christine Mapungwana</h3>
+            <p className="text-gray-600">Community Engagement Strategist</p>
           </div>
 
         </div>
@@ -122,8 +122,8 @@ const AboutUs = () => {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold mb-2">John Doe</h3>
-            <p className="text-gray-600">Founder & CEO</p>
+            <h3 className="text-xl font-bold mb-2">MacDaniel Chimedza</h3>
+            <p className="text-gray-600"> Program Lead, Digital Innovation</p>
           </div>
 
           {/* Team Member 2 */}
@@ -136,8 +136,8 @@ const AboutUs = () => {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold mb-2">Jane Smith</h3>
-            <p className="text-gray-600">Executive Director</p>
+            <h3 className="text-xl font-bold mb-2">Nyaradzo Gombarago</h3>
+            <p className="text-gray-600">Finance Director</p>
           </div>
         </div>
       </div>
